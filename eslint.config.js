@@ -17,28 +17,12 @@ export default [
   {
     languageOptions: { globals: globals.browser },
     rules: {
-    //   // ...airbnb.rules,
-    //   'no-console': 'warn',
-    //   '@typescript-eslint/no-explicit-any': 'error',
-    //   // '@typescript-eslint/no-empty-function': 'on',
-    //   // '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/no-unsafe-argument': 'off',
       '@typescript-eslint/semi': 'off',
       '@typescript-eslint/quotes': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
       'react/react-in-jsx-scope': 'off',
-    //   'react/jsx-uses-react': 'off',s
-    //   // 'import/extensions': [
-    //   //   'error',
-    //   //   'ignorePackages',
-    //   //   {
-    //   //     js: 'never',
-    //   //     jsx: 'never',
-    //   //     ts: 'never',
-    //   //     tsx: 'never',
-    //   //   },
-    //   // ],
     },
     settings: {
       'import/resolver': {

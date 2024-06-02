@@ -1,5 +1,5 @@
 import Image from 'next/image'
-// import s from './index.module.css'
+import React from 'react'
 
 const Home = () => {
   return (
