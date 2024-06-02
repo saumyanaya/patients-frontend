@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky",
-    "lint": "npx eslint --fix src/**/*.{ts,tsx}"
+    "lint": "npx prettier . --write && npx eslint --fix src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -27,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard-with-typescript": "^43.0.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
