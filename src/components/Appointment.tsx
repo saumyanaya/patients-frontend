@@ -7,7 +7,7 @@ const appointments = [
 ];
 
 const Appointment: FC = () => (
-    <div className="bg-white p-4 rounded-lg shadow-md space-y-4">
+    <div className="bg-white p-4 rounded-lg shadow-md space-y-4 ">
         <h1 className="font-bold text-lg mb-4">Upcoming Appointments</h1>
         {appointments.map((appointment) => (
             <div key={appointment.id} className="border-b pb-2">

@@ -1,28 +1,31 @@
 
 import { FC } from 'react';
-import { HomeIcon, ClipboardListIcon, CalendarIcon, LogoutIcon, ChatIcon } from '@heroicons/react/outline'; // import icons from Heroicons
+import { HomeIcon, ClipboardListIcon, DocumentReportIcon, LightBulbIcon, CalendarIcon, LogoutIcon, ChatIcon } from '@heroicons/react/outline'; // import icons from Heroicons
 
 const Sidebar: FC = () => {
     return (
-        <aside className="bg-blue-900 text-white h-screen w-64 p-6">
 
-            <div className="text-center text-xl font-bold mb-8">Quantum Doctor</div>
-            <nav className="space-y-6">
+
+        <aside className="bg-blue-900 text-white h-full w-64 p-6 ">
+
+            <img src="/images/dashboard.png" className=" mb-8 h-6 bg-white my-6" alt="Workflow logo" />
+
+            <nav className="flex-grow space-y-6">
                 <a href="#" className="flex items-center space-x-4">
                     <HomeIcon className="w-6 h-6" />
                     <span>Dashboard</span>
                 </a>
                 <a href="#" className="flex items-center space-x-4">
-                    <ClipboardListIcon className="w-6 h-6" />
+                    <DocumentReportIcon className="w-6 h-6" />
                     <span>My Vitals</span>
                 </a>
                 <a href="#" className="flex items-center space-x-4">
-                    <ClipboardListIcon className="w-6 h-6" />
+                    <ChatIcon className="w-6 h-6" />
                     <span>Consultations</span>
                 </a>
                 <a href="#" className="flex items-center space-x-4">
-                    <ClipboardListIcon className="w-6 h-6" />
-                    <span>My Reccommendations</span>
+                    <LightBulbIcon className="w-6 h-6" />
+                    <span>Reccommendations</span>
                 </a>
                 <a href="#" className="flex items-center space-x-4">
                     <ClipboardListIcon className="w-6 h-6" />
@@ -36,12 +39,15 @@ const Sidebar: FC = () => {
                     <ChatIcon className="w-6 h-6" />
                     <span>ChatBot</span>
                 </a>
-                <a href="#" className="flex items-center space-x-4">
-                    <LogoutIcon className="w-6 h-6" />
-                    <span>Logout</span>
-                </a>
             </nav>
+
+            <a href="#" className="flex items-center space-x-4 block mt-20">
+                <LogoutIcon className="w-6 h-40" />
+                <span>Logout</span>
+            </a>
         </aside>
+
+
     );
 };
 

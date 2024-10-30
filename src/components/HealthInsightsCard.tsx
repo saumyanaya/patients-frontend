@@ -1,4 +1,4 @@
-// components/HealthInsightCard.tsx
+
 import { FC } from 'react';
 
 interface Insight {

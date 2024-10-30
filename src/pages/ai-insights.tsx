@@ -1,7 +1,11 @@
 
+
+
 import DashboardLayout from '../components/DashboardLayout';
 import VitalsHeader from '../components/VitalsHeader';
 import HealthInsightCard from '../components/HealthInsightsCard';
+
+
 
 
 const insights = [
@@ -33,17 +37,18 @@ const insights = [
     },
 ];
 
+
+
 const AIInsightsPage = () => {
     return (
         <DashboardLayout>
             <VitalsHeader activeTab="AI Insights" />
-            <VitalsHeader activeTab="View personalized health insights based on your vitals." />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                 {insights.map((insight) => (
                     <HealthInsightCard key={insight.id} insight={insight} />
                 ))}
             </div>
-        </DashboardLayout>
+        </DashboardLayout >
     );
 };
 
