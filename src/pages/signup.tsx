@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Modal from '../components/modal';
 
 const SignupForm = () => {
     const [formStage, setFormStage] = useState(1);
@@ -7,6 +6,8 @@ const SignupForm = () => {
         firstName: '',
         email: '',
         contact: '',
+        dateOfBirth: '',
+        location: '',
         termsAccepted: false,
     });
     const [selectedImages, setSelectedImages] = useState<number[]>([]);
@@ -128,6 +129,23 @@ const SignupForm = () => {
                                     placeholder="Contact"
                                     className="w-full border border-gray-300 p-2 rounded-md mb-4"
                                     value={formData.contact}
+                                    onChange={handleInputChange}
+                                />
+
+                                <input
+                                    type="date"
+                                    name="dateOfBirth"
+                                    className="w-full border border-gray-300 p-2 rounded-md mb-4"
+                                    value={formData.dateOfBirth}
+                                    onChange={handleInputChange}
+                                />
+
+                                <input
+                                    type="text"
+                                    name="location"
+                                    placeholder="Location"
+                                    className="w-full border border-gray-300 p-2 rounded-md mb-4"
+                                    value={formData.location}
                                     onChange={handleInputChange}
                                 />
                                 <div className="flex items-center mb-6">
